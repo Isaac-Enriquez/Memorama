@@ -1,3 +1,5 @@
+#A00827133 Andrea Fernanda Molina Blandon
+#A00829207 Isaac Alejandro Enriquez Trejo
 from random import *
 from turtle import *
 from freegames import path
