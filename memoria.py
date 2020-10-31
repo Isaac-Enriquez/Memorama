@@ -81,6 +81,7 @@ def draw():
     if mark is not None and hide[mark]:
         x, y = xy(mark)
         up()
+        #Esta linea de código determina la posición del texto dentro del cuadro
         goto(x + 2, y)
         color('black')
         write(tiles[mark], font=('Arial', 30, 'normal'))
