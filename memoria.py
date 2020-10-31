@@ -4,6 +4,8 @@ from random import *
 from turtle import *
 from freegames import path
 
+
+stateCount ={'Taps':0}
 #Se crean la lista de signos a utilizar así como también se
 #importa la imagen del carro que resulta de resolver el juego.
 win_condition=0
@@ -56,7 +58,11 @@ def tap(x, y):
         
         #Este contador aumenta cada vez que una pareja correcta sea elegida
         win_condition+=1
-        
+    
+    stateCount['Taps'] += 1
+    print ('Clicks: ', stateCount['Taps'])
+    
+    
 #Esta función dibuja la imagen y las
 #casillas, asi como el texto en ellas.
 def draw():
