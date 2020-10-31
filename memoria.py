@@ -8,9 +8,9 @@ from freegames import path
 #importa la imagen del carro que resulta de resolver el juego.
 win_condition=0
 car = path('car.gif')
-tiles = list(['!','#','$','%','&','♂','♪','♫','=','▼','▲','?','¶',
-              '♀','¬','@','○','↓','↑','~','+','►','§','↔','<','>',
-              '☻','♥','☺','♦','♣','♠']) * 2
+tiles = list(['±','#','$','ß','&','¤','♪','×','=','µ','⌂','?','¶',
+              '÷','¬','ƒ','○','‡','¢','~','+','¥','§','þ','<','>',
+              '■','♥','€','♦','♣','♠']) * 2
 state = {'mark': None}
 hide = [True] * 64
 
