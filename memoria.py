@@ -92,7 +92,7 @@ def draw():
         x, y = xy(mark)
         up()
         #Esta linea de código determina la posición del texto dentro del cuadro
-        goto(x + 18 , y + 10)
+        goto(x + 15 , y)
         color('black')
         write(tiles[mark], font=('Arial', 30, 'normal'))
      
