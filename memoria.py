@@ -4,8 +4,10 @@ from random import *
 from turtle import *
 from freegames import path
 
+#Se determina un "count" que permita contar la observaciones de
+#la cual se especifican los 'taps' a lo largo del juego.
+Count ={'Taps':0}
 
-stateCount ={'Taps':0}
 #Se crean la lista de signos a utilizar así como también se
 #importa la imagen del carro que resulta de resolver el juego.
 win_condition=0
@@ -59,8 +61,10 @@ def tap(x, y):
         #Este contador aumenta cada vez que una pareja correcta sea elegida
         win_condition+=1
     
-    stateCount['Taps'] += 1
-    print ('Clicks: ', stateCount['Taps'])
+    #Cada vez que se haga click en una casilla, se contara el numero de
+    #clicks que se han realizado
+    Count['Taps'] += 1
+    print ('Clicks en total: ', Count['Taps'])
     
     
 #Esta función dibuja la imagen y las
